@@ -1,0 +1,6 @@
+<div class="message-input">
+  <%= form_for(@message, remote: true) do |f| %>
+    <%= f.text_area :content, placeholder: 'You can use Github-flavored markdown for better presenting' %>
+    <%= f.submit "Send" %>
+  <% end %>
+</div>
